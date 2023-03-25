@@ -6,3 +6,24 @@ $color-soft-purple: #9C9EFE;
 $color-grey: #808080;
 $color-black: #000000;
 $color-white: #FFFFFF;
+
+.block{
+    margin-left: 23px;
+    margin-top: 10px;
+    justify-content: space-between;
+    height: flex;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: $color-soft-purple;
+
+    .title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 50px;
+        font-family: 'Sora';
+        font-style: normal;
+        font-size: 45px;
+        font-weight: 600;
+        color: $color-white;
+    }
+}

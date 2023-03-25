@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 import React from "react";
 import "./component/navbar.scss";
 import { Icon } from '@iconify/react';
@@ -41,4 +40,3 @@ window.onload = function(){
 };
 
 export default Navbar;
->>>>>>> Stashed changes
