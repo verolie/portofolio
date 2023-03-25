@@ -11,7 +11,7 @@ function About() {
         <div className="layout-about">
         <div className="block" style={{backgroundColor: '#9C9EFE'}}>
             <div className="block" style={{backgroundColor: '#9C9EFE'}}>
-
+<p>coba</p>
             </div>
             </div>
             <div className="right-layout-about" >
