@@ -1,7 +1,6 @@
-
 import React from "react";
 import "./component/navbar.scss";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 
 function Navbar() {
   return (
@@ -22,21 +21,20 @@ function Navbar() {
           <a href="/#">Certificate</a>
           <a href="/#">Skills</a>
         </nav>
-        <Icon icon="bx:menu" id="menu-icon"/>
+        <Icon icon="bx:menu" id="menu-icon" />
       </div>
     </header>
   );
 }
 
-
-window.onload = function(){ 
-  let menu = document.querySelector("#menu-icon")
-  let navbar = document.querySelector(".NavRoutes")
+window.onload = function () {
+  let menu = document.querySelector("#menu-icon");
+  let navbar = document.querySelector(".NavRoutes");
 
   menu.onclick = () => {
-      menu.classList.toggle("bx:x")
-      navbar.classList.toggle("open");
-  }
+    menu.classList.toggle("bx:x");
+    navbar.classList.toggle("open");
+  };
 };
 
 export default Navbar;

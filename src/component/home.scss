@@ -1,63 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
 
-$color-dark-purple: #A66CFF;
-$color-soft-purple: #9C9EFE;
+$color-dark-purple: #a66cff;
+$color-soft-purple: #9c9efe;
 $color-grey: #808080;
 $color-black: #000000;
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 
+.profile {
+  display: flex;
 
-    .profile{
-        display: flex;
-        
-        .foto-div{
-            width: 50%;
-            margin-right: 20px;       
-            float: left;
+  .foto-div {
+    width: 50%;
+    margin-right: 20px;
+    float: left;
 
-            .profile{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-        
-        .desc-profile{
-            width: 40%;
-            float: left;
-           
-            .sub-title{
-                margin-top: 90px;
-                font-family: 'Sora';
-                font-style: normal;
-                font-size: 55px;
-                font-weight: 600;
-                line-height: 69px;
-                letter-spacing: 0.01em;
-                color: $color-dark-purple;
-            }
+    .profile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
-            .description{
-                font-family: 'Sora';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 40px;
-                line-height: 50px;
-                letter-spacing: 0.01em;
-                color: $color-black;
-            }
-        }
+  .desc-profile {
+    width: 40%;
+    float: left;
 
-        .text{
-            font-family: 'Epilogue';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
-            align-items: center;
-            letter-spacing: 0.01em;
-            color: $color-grey;
-        }
+    .sub-title {
+      margin-top: 90px;
+      font-family: "Sora";
+      font-style: normal;
+      font-size: 55px;
+      font-weight: 600;
+      line-height: 69px;
+      letter-spacing: 0.01em;
+      color: $color-dark-purple;
     }
 
+    .description {
+      font-family: "Sora";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 0.01em;
+      color: $color-black;
+    }
+  }
+
+  .text {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: $color-grey;
+  }
+}
