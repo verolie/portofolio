@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+
+$color-dark-purple: #a66cff;
+$color-soft-purple: #9c9efe;
+$color-grey: #808080;
+$color-black: #000000;
+$color-white: #ffffff;
+
+.experience{
+    margin-left: 125px;
+    margin-right: 100px;
+.block {
+    margin-top: 20px;
+    justify-content: space-between;
+    height: flex;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    background-color: $color-soft-purple;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 50px;
+        font-family: "Sora";
+        font-style: normal;
+        font-size: 45px;
+        font-weight: 600;
+        color: $color-white;
+      }
+}
+}
+
+.list{
+    margin-top: 50px;
+    margin-bottom: 15px;
+.square {
+    height: 50px;
+    width: 185px;
+    background-color: #DBDCFF;
+    border-left: 4px solid $color-soft-purple;
+   .list-text {
+    margin-left: 8px;
+    padding-top: 50px;
+        color: $color-soft-purple;
+        font-family: "Sora";
+        font-style: normal;
+        font-size: 14px;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+   } 
+
+}
+}
+
+
+.list-description{
+     padding-top: 25px;
+     .title-job {
+        margin-left: 30px;
+        margin-top: 14px;
+        font-family: "Sora";
+        font-style: normal;
+        font-size: 20px;
+        color: $color-white;
+        font-weight: 550;
+}
+}

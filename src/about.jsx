@@ -41,6 +41,7 @@ function About() {
               </div>
             </div>
           </div>
+          
           <div className="col">
             <div className="block" style={{ backgroundColor: "#FFFFFF" }}>
               <p className="text-bold">Email :  veyolie@gmail.com</p>

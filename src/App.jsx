@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./navbar";
 import Home from "./home";
 import About from "./about";
+import Experience from "./experience";
 import "./App.scss";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <body>
         <Home className="App-Home" />
         <About className="App-About" />
+        <Experience className="App-Experience"/>
       </body>
     </div>
   );
