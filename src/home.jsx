@@ -11,7 +11,7 @@ function Home() {
       <div className="desc-profile">
         <div className="sub-title">Veronica</div>
         <div className="description">Web Developer</div>
-        <div className="text">
+        <div className="text" style={{marginTop: "4%"}}>
           <div>
             I am an Universitas Multimedia Nusantara student that studies System
             Information. I am interested in developing an application or
