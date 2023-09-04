@@ -4,6 +4,7 @@ import Home from "./home";
 import About from "./about";
 import Experience from "./experience";
 import Certificate from "./certificate";
+import Skill from "./skill";
 import "./App.scss";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <About className="App-About" />
         <Experience className="App-Experience"/>
         <Certificate className="App-Certificate"/>
+        <Skill className="App-Skill"/>
       </body>
     </div>
   );
