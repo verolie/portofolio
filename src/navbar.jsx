@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <header>
       <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
       <div className="Navbar">
         <div className="NavLog">
           <h1 className="NavHello">Hello,</h1>
