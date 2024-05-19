@@ -34,7 +34,7 @@
         }
 
         .certificate-list {
-            margin-top: 4%;
+            margin-top: 10%;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
@@ -47,8 +47,18 @@
             
         }
 
-        .certificate-desc {
-            margin-top: 4%;
+        .certificate-title-desc {
+            margin-top: 3%;
+            margin-left: 20px;
+            margin-right: 25px;
+            text-align: justify;
+            font-family: "Sora";
+            font-style: normal;
+            color: $color-black;
+        }
+
+        .certificate-desc{
+            margin-top: 3%;
             margin-left: 20px;
             margin-right: 25px;
             text-align: justify;
