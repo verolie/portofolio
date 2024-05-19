@@ -4,7 +4,7 @@ import "./component/experience.scss";
 
 function Experience() {
   return (
-    <div className="experience">
+    <div id="experience" className="experience">
       <div className="block">
         <p className="title">Experience</p>
       </div>

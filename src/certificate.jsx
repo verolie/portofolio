@@ -4,7 +4,7 @@ import "./component/certificate.scss";
 
 function Certificate() {
     return (
-       <div className="certificate">
+       <div id="certificate" className="certificate">
             <div className="block">
                 <p className="title">Certificate</p>
             </div>

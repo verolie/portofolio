@@ -20,7 +20,7 @@ function About() {
 }
 
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="block" style={{ backgroundColor: "#9C9EFE" }}>
         <p className="title">About Me</p>
       </div>

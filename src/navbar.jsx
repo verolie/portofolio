@@ -13,13 +13,11 @@ function Navbar() {
           <h1 className="NavName">my name Vero</h1>
         </div>
         <nav className="NavRoutes">
-          <a href="/#" className="active">
-            Home
-          </a>
-          <a href="/#">About</a>
-          <a href="/#">Experience</a>
-          <a href="/#">Certificate</a>
-          <a href="/#">Skills</a>
+          <a href="/#home" className="active">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#experience">Experience</a>
+          <a href="/#certificate">Certificate</a>
+          <a href="/#skill">Skills</a>
         </nav>
         <Icon icon="bx:menu" id="menu-icon" />
       </div>

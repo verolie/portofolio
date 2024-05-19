@@ -4,7 +4,7 @@ import Foto from "./assets/foto-pribadi.png";
 
 function Home() {
   return (
-    <div className="profile">
+    <div id="home" className="profile">
       <div className="foto-div">
         <img src={Foto} alt="foto-pribadi" className="profile" />
       </div>

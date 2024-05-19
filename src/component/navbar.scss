@@ -20,7 +20,8 @@ $color-white: #ffffff;
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
   box-shadow: 0 4px 6px -6px #222;
-
+  background-color: $color-white;
+  
   .NavLog {
     display: flex;
     align-items: center;
@@ -41,6 +42,7 @@ $color-white: #ffffff;
       font-size: 20px;
       font-style: normal;
       font-weight: 300;
+      color: $color-black;
     }
   }
 
