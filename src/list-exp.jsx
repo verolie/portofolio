@@ -8,18 +8,17 @@ import Skill from "./skill";
 import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const company = ["Universitas Multimedia Nusantara", "Finpoint", "Finexus"];
+
+  let companyList = [];
+
+  company.forEach((comp, index) => {
+    companyList.push(<p className="list-text" key={index}>{comp}</p>);
+  });  
 
   return (
-    <div className="App">
-      <Navbar className="App-Navbar" />
-      <body>
-        <Home className="App-Home" />
-        <About className="App-About" />
-        <Experience className="App-Experience"/>
-        <Certificate className="App-Certificate"/>
-        <Skill className="App-Skill"/>
-      </body>
+    <div className="square">
+         {com}
     </div>
   );
 }

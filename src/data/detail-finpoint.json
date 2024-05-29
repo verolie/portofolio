@@ -1,0 +1,27 @@
+[
+  {
+    "company_name": "Finpoint",
+    "data": [
+      {
+        "job-title": "Backend Developer (Fintech)",
+        "job-desc": "Work as a backend developer as a restful API developer for website development and develop generating report program using Golang programing language.",
+        "date-start": 202206,
+        "date-end": 202212,
+        "detail": [
+          {
+            "id": 0,
+            "desc": "Develop a payment gateway and backend website program using Golang programming language and PostgreSQL as the Database."
+          },
+          {
+            "id": 1,
+            "desc": "Understanding using docker and deploying program at the server."
+          },
+          {
+            "id": 2,
+            "desc": "Understand how to use Elasticsearch to get transactions and generate a report."
+          }
+        ]
+      }
+    ]
+  }
+]

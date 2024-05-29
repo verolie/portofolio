@@ -1,0 +1,47 @@
+[
+  {
+    "company_name": "UMN",
+    "data": [
+      {
+        "job-title": "Assistant Laboratory (Visual Programming)",
+        "job-desc": "Teaching Visual Programming in Universitas Multimedia Nusantara using Visual Studio.",
+        "date-start": 202201,
+        "date-end": 202206,
+        "detail": [
+          {
+            "id": 0,
+            "desc": "learned more about using the C# language."
+          },
+          {
+            "id": 1,
+            "desc": "I also learned about working together with my partner and building communication in class."
+          },
+          {
+            "id": 2,
+            "desc": "Learning about how to transfer knowledge to the other student."
+          }
+        ]
+      },
+      {
+        "job-title": "Assistant Laboratory (Probability Statistic)",
+        "job-desc": "Teaching Probability Statistics in University Multimedia Nusantara using R Studio.",
+        "date-start": 202108,
+        "date-end": 202112,
+        "detail": [
+          {
+            "id": 0,
+            "desc": "Learned how to work together with my partner."
+          },
+          {
+            "id": 1,
+            "desc": "learn more about R, have a good experience in teaching."
+          },
+          {
+            "id": 2,
+            "desc": "have a good experience in teaching and communicate with the student."
+          }
+        ]
+      }
+    ]
+  }
+]

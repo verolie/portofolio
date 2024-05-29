@@ -1,6 +1,6 @@
 import React from "react";
 import "./component/experience.scss";
-
+import JsonJob from"./data/list-job.json"
 
 function Experience() {
   return (
@@ -14,7 +14,7 @@ function Experience() {
           <div className="col">
 
             <div className="list">
-              <div className="square">
+              {/* <div className="square">
                 <p className="list-text">Universitas Multimedia Nusantara</p>
               </div>
               <div className="square" style={{ backgroundColor: "rgba(156, 158, 254, 0.2)", borderLeft: "4px solid #D1D2FF"}}>
@@ -22,7 +22,7 @@ function Experience() {
               </div>
               <div className="square" style={{ backgroundColor: "rgba(156, 158, 254, 0.2)", borderLeft: "4px solid #D1D2FF"}}>
                 <p className="list-text" >Finexus</p>
-              </div>
+              </div> */}
             </div>   
           </div>
 
