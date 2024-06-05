@@ -3,10 +3,10 @@
     "company_name": "Finpoint",
     "data": [
       {
-        "job-title": "Backend Developer (Fintech)",
-        "job-desc": "Work as a backend developer as a restful API developer for website development and develop generating report program using Golang programing language.",
-        "date-start": 202206,
-        "date-end": 202212,
+        "job_title": "Backend Developer (Fintech)",
+        "job_desc": "Work as a backend developer as a restful API developer for website development and develop generating report program using Golang programing language.",
+        "date_start": 202206,
+        "date_end": 202212,
         "detail": [
           {
             "id": 0,

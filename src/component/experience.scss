@@ -51,16 +51,15 @@ $color-white: #ffffff;
     width: 185px;
     background-color: #DBDCFF;
     border-left: 4px solid $color-soft-purple;
+    border-bottom: 1px dashed $color-soft-purple;
    .list-text {
     margin-left: 8px;
-    padding-top: 50px;
+    padding-top: 10px;
         color: $color-soft-purple;
         font-family: "Sora";
         font-style: normal;
         font-size: 14px;
         top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
    } 
 
 }

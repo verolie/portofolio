@@ -3,10 +3,10 @@
     "company_name": "Finexus",
     "data": [
       {
-        "job-title": "Software Engineer (Fintech)",
-        "job-desc": "Work as a Backend developer as a software engineer for the end of the day (EOD) in a fnance program. Help to maintain and build new programs.",
-        "date-start": 202306,
-        "date-end": 202406,
+        "job_title": "Software Engineer (Fintech)",
+        "job_desc": "Work as a Backend developer as a software engineer for the end of the day (EOD) in a fnance program. Help to maintain and build new programs.",
+        "date_start": 202306,
+        "date_end": 202406,
         "detail": [
           {
             "id": 0,
