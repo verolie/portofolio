@@ -3,6 +3,7 @@ import "./component/experience.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
+
 type JobList = {
   list_job: string;
 };
@@ -129,10 +130,12 @@ function Experience() {
                   style={{ padding: "15px" }}
                 >
                   {/* loop */}
-                  {selectedData.map((data, index) => (
+                  {selectedData.map((data, indexDet) => (
                     <div
-                      className={`carousel-item ${index === 0 ? "active" : ""}`}
-                      key={index}
+                      className={`carousel-item ${
+                        indexDet === 0 ? "active" : ""
+                      }`}
+                      key={indexDet}
                     >
                       <div className="row">
                         <div className="block col-md">
@@ -147,11 +150,11 @@ function Experience() {
                       <div className="block" style={{ background: "white" }}>
                         <p className="exp-desc">{data.job_desc}</p>
                         <ul>
-                          {data.detail.map((dataDetail, index) => (
+                          {data.detail.map((dataDetail, indexDetail) => (
                             <li
                               className="exp-desc"
                               style={{ marginTop: "0%" }}
-                              key={index}
+                              key={indexDetail}
                             >
                               {dataDetail.desc}
                             </li>
