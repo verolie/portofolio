@@ -66,10 +66,22 @@ $color-white: #ffffff;
 }
 
 
+.date-job {
+    margin-left: 30px;
+    margin-top: 14px;
+    font-family: "Sora";
+    font-style: normal;
+    align-self: end;
+    font-size: 20px;
+    color: $color-black;
+    font-weight: 550;
+}
 .list-description{
      padding-top: 25px;
-     .title-job {
-        margin-left: 30px;
+}
+.title-job {
+    // padding-top: 25px;
+    margin-left: 30px;
         margin-top: 14px;
         font-family: "Sora";
         font-style: normal;
@@ -77,4 +89,23 @@ $color-white: #ffffff;
         color: $color-white;
         font-weight: 550;
 }
+.carousel-control-next {
+    position: relative;
+    width: 5%;
+
+    .block {
+
+        border-radius: 5px;
+
+    }
+}
+
+
+.carousel-control-prev {
+    position: relative;
+    width: 5%;
+}
+
+.carousel-inner {
+    width: 90%;
 }

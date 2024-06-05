@@ -18,7 +18,7 @@ function App() {
         <About className="App-About" />
         <Experience className="App-Experience"/>
         <Certificate className="App-Certificate"/>
-        <Skill className="App-Skill"/>
+        {/* <Skill className="App-Skill"/> */}
       </body>
     </div>
   );

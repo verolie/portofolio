@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./component/experience.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 type JobList = {
   list_job: string;
@@ -7,7 +9,7 @@ type JobList = {
 
 type JobDesc = {
   company_name: string;
-  data: JobData;
+  data: JobData[];
 };
 
 type JobData = {
@@ -15,7 +17,7 @@ type JobData = {
   job_desc: string;
   date_start: string;
   date_end: string;
-  detail: JobDetail;
+  detail: JobDetail[];
 };
 
 type JobDetail = {
@@ -29,6 +31,7 @@ function Experience() {
   const [Finpoint, setFinpoint] = useState<JobDesc[]>([]);
   const [Finexus, setFinexus] = useState<JobDesc[]>([]);
   const [selected, setSelected] = useState<number>(0);
+  const [selectedData, setSelectedData] = useState<JobData[]>([]);
 
   useEffect(() => {
     const fetchJobList = async () => {
@@ -45,8 +48,9 @@ function Experience() {
       console.log("data UMN", dataUmn);
 
       setUmn(dataUmn);
+      setSelectedData(dataUmn[0].data);
 
-      const responseFinpoint = await fetch("/data/detail-finexus.json");
+      const responseFinpoint = await fetch("/data/detail-finpoint.json");
       const dataFinpoint = await responseFinpoint.json();
       console.log("data Finpoint", dataFinpoint);
 
@@ -65,6 +69,20 @@ function Experience() {
 
   const handleClick = (index: number) => {
     setSelected(index);
+
+    switch (index) {
+      case 0:
+        setSelectedData(umn[0].data);
+        break;
+      case 1:
+        setSelectedData(Finpoint[0].data);
+        break;
+      case 2:
+        setSelectedData(Finexus[0].data);
+        break;
+      default:
+        setSelectedData([]);
+    }
   };
 
   return (
@@ -94,37 +112,85 @@ function Experience() {
                         }
                   }
                 >
-                  <p className="list-text" onClick={() => handleClick(index)}>
-                    {job.list_job}
-                  </p>
+                  <p className="list-text">{job.list_job}</p>
                 </div>
               ))}
             </div>
           </div>
-
-          <div className="col-8">
-            <div className="list-description">
-              <div
-                className="block"
-                style={{ marginRight: "190px", width: "auto" }}
-              >
-                <p className="title-job">Laboratory Assistance</p>
+          <div
+            id="myCarousel"
+            className="col-9 carousel slide"
+            data-ride="carousel"
+          >
+            <div className="container">
+              <div className="row">
+                <div
+                  className="carousel-inner col-10"
+                  style={{ padding: "15px" }}
+                >
+                  {/* loop */}
+                  {selectedData.map((data, index) => (
+                    <div
+                      className={`carousel-item ${index === 0 ? "active" : ""}`}
+                      key={index}
+                    >
+                      <div className="row">
+                        <div className="block col-md">
+                          <p className="title-job">{data.job_title}</p>
+                        </div>
+                        <div className="col-sm d-flex">
+                          <p className="date-job">
+                            {data.date_start} - {data.date_end}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="block" style={{ background: "white" }}>
+                        <p className="exp-desc">{data.job_desc}</p>
+                        <ul>
+                          {data.detail.map((dataDetail, index) => (
+                            <li
+                              className="exp-desc"
+                              style={{ marginTop: "0%" }}
+                              key={index}
+                            >
+                              {dataDetail.desc}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-
-              <div className="block" style={{ background: "white" }}>
-                <p className="exp-desc">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ut porta quam. Aliquam mauris nibh, euismod eget ante
-                  porta, iaculis scelerisque quam. Cras lacinia bibendum
-                  tristique. Aliquam erat volutpat. Aenean ac ultricies quam, in
-                  lacinia libero. Mauris sollicitudin aliquet magna in
-                  vulputate. Vivamus a enim vitae tortor lacinia consequat. Cras
-                  condimentum diam sit amet tempus lacinia. Vestibulum laoreet
-                  fringilla mauris vel tincidunt. Sed venenatis, sem in
-                  venenatis egestas, lacus justo luctus ipsum, a fringilla ex
-                  sem ac neque. Morbi efficitur diam sit amet pretium semper.
-                  Cras vel tellus nec nisi lacinia placerat.
-                </p>
+            </div>
+            <div className="Container">
+              <div className="row">
+                <button
+                  className="carousel-control-prev block"
+                  style={{ borderRadius: "5px", marginRight: "10px" }}
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button
+                  className="carousel-control-next block"
+                  style={{ borderRadius: "5px" }}
+                  type="button"
+                  data-bs-target="#myCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
