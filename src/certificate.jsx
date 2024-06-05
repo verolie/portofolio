@@ -17,7 +17,7 @@ function Certificate() {
                     </div>
                     <div className="col-8">
                         <div className="block"  style={{backgroundColor: "#ffffff"}}>
-                            <p className="certificate-title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut porta quam.</p> 
+                            <p className="certificate-title-desc">Gajiku First Place and Public Favorite at Startup Weekend Giving Idea About How To Save Money More Fun</p> 
                         </div>
                     </div>
                     <div className="col-2">
