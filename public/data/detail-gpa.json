@@ -1,0 +1,31 @@
+[
+  {
+    "company_name": "PT. Gema Phala Ananta",
+    "data": [
+      {
+        "job_title": "Fullstack Developer",
+        "job_desc": "Work as a Fullstack Developer Build backend and frontend from start.",
+        "date_start": "Agust 2024",
+        "date_end": "Present",
+        "detail": [
+          {
+            "id": 0,
+            "desc": "Designed and contributed to the UI/UX of websites using Figma to create a user-friendly and visually appealing interface."
+          },
+          {
+            "id": 1,
+            "desc": "Contribute develop website using Next.js and TypeScript, integrating MongoDB and MySQL for data management, and styled the application with Material UI."
+          },
+          {
+            "id": 2,
+            "desc": "Implemented Test-Driven Development practices using Jest to ensure code reliability and maintainability."
+          },
+          {
+            "id": 3,
+            "desc": "Built and integrated JWT-based authentication for both frontend and backend, securely storing tokens in the database."
+          }
+        ]
+      }
+    ]
+  }
+]

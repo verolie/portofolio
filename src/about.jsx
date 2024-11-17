@@ -62,7 +62,7 @@ function About() {
                 </div>
               </div>
             </div>
-              <button className="block" style={{border: "0px", marginBottom: "15px", marginTop: "15px"}} onClick={onButtonClick}><p className="text-button">Download CSV</p></button>
+              <button className="block" style={{border: "0px", marginBottom: "15px", marginTop: "15px"}} onClick={onButtonClick}><p className="text-button">Download Resume</p></button>
           </div>
         </div>
       </div>

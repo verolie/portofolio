@@ -31,6 +31,7 @@ function Experience() {
   const [umn, setUmn] = useState<JobDesc[]>([]);
   const [Finpoint, setFinpoint] = useState<JobDesc[]>([]);
   const [Finexus, setFinexus] = useState<JobDesc[]>([]);
+  const [GPA, setGPA] = useState<JobDesc[]>([]);
   const [selected, setSelected] = useState<number>(0);
   const [selectedData, setSelectedData] = useState<JobData[]>([]);
 
@@ -62,6 +63,12 @@ function Experience() {
       console.log("data Finexus", dataFinexus);
 
       setFinexus(dataFinexus);
+
+      const responseGPA = await fetch("/data/detail-gpa.json");
+      const dataGPA = await responseGPA.json();
+      console.log("data GPA", dataGPA);
+
+      setGPA(dataGPA);
     };
 
     fetchJobList();
@@ -80,6 +87,9 @@ function Experience() {
         break;
       case 2:
         setSelectedData(Finexus[0].data);
+        break;
+      case 3:
+        setSelectedData(GPA[0].data);
         break;
       default:
         setSelectedData([]);
