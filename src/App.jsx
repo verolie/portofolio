@@ -1,30 +1,43 @@
-import { useState } from "react";
-import Navbar from "./navbar";
-import Home from "./home";
-import About from "./about";
-import Experience from "./experience";
-import Certificate from "./certificate";
-import Skill from "./skill";
-import "./App.scss";
+import { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Contact from "./components/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // Animasi muncul saat elemen ber-class "reveal" masuk ke layar
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div className="App">
-      <Navbar className="App-Navbar" />
-      <body>
-        <Home className="App-Home" />
-        <About className="App-About" />
-        <Experience className="App-Experience"/>
-        <Certificate className="App-Certificate"/>
-        {/* <Skill className="App-Skill"/> */}
-      </body>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Contact />
+      </main>
+    </>
   );
 }
 
-export default App;<script>
-    function ExperienceList()
-</script>;
-
+export default App;
